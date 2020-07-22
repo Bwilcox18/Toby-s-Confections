@@ -1,4 +1,8 @@
 
+.navbar {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
 i {
   padding-right: 5px;
 }
@@ -7,17 +11,14 @@ i {
   align-items: center;
 }
 
-.pastryList {
-  background-color: #eff0f0;
-}
-
 @font-face {
   font-family: "Sacramento";
   src: url(/fonts/Sacramento-Regular.ttf);
 }
-h1, h3 {
+h1, h3, h4, h5 {
   font-family: "Sacramento";
 }
+
 .parallax {
   /* The image used */
   background-image: url("/img/3bread.jpg");
@@ -34,10 +35,11 @@ h1, h3 {
 
 .carouselCont {
   width:  600px;
+  height: ;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  border: solid white;
+  box-shadow: 5px 5px 5px ;
 }
 
 .baker {
@@ -59,19 +61,12 @@ h1 {
 .pattern {
   height: auto;
   width: 100vw;
-  background-image: repeating-linear-gradient(
-    32deg, 
-    transparent,
-    transparent 3px,
-    black 3px,
-    black 3px,
-    transparent 4px
-    );
-/*     background-size: 6px 6px; */
-}
-
-.mainBackground {
-  background-color: #FC93AC;
+  background-image: repeating-linear-gradient(-45deg,
+  #FC99B1,
+  #FC99B1 2px,
+  #FC93AC 2px,
+  #FC93AC 4px);
+  box-shadow: 0px 15px 10px -15px #111; 
 }
 
 .transparent {
@@ -90,3 +85,62 @@ h1 {
   padding-bottom: 2rem;
 }
 
+.topLogo {
+  padding-right: 0px;
+  padding-left: auto;
+
+}
+
+.site-footer {
+  height: auto;
+  width: 100vw;
+  background-image: repeating-linear-gradient(-45deg,
+  #FC99B1,
+  #FC99B1 2px,
+  #FC93AC 2px,
+  #FC93AC 4px);
+  box-shadow: 0px -15px 10px -15px #111;
+}
+
+.spacer {
+  height: 40px
+}
+
+.footer-center {
+  margin: auto;
+  width: 50%;
+}
+
+.indent {
+  display: block;
+}
+
+.shadow-bottom {
+  box-shadow: 0px 15px 10px -15px #111; 
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5 ease;
+  background-color: rgba(255,255,255,0.5);
+}
+.overlay:hover {
+  opacity: 1;
+}
